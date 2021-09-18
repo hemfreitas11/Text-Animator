@@ -1,0 +1,13 @@
+me\bkrmt\bkcore\textanimator\AnimationOptions.class
+me\bkrmt\bkcore\textanimator\AnimationReceiver.class
+me\bkrmt\bkcore\textanimator\AnimationType.class
+me\bkrmt\bkcore\textanimator\CancellableTask$1.class
+me\bkrmt\bkcore\textanimator\TextAnimation.class
+me\bkrmt\bkcore\textanimator\CancellableTask.class
+me\bkrmt\bkcore\textanimator\TextAnimator.class
+me\bkrmt\bkcore\textanimator\SchedulerRunnable.class
+me\bkrmt\bkcore\textanimator\AnimationResponse.class
+me\bkrmt\bkcore\textanimator\AnimatorManager$1.class
+me\bkrmt\bkcore\textanimator\animations\ShineAnimation.class
+me\bkrmt\bkcore\textanimator\AnimatorManager.class
+me\bkrmt\bkcore\textanimator\AnimationPlaceholder.class
