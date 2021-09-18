@@ -1,5 +1,6 @@
 package me.bkrmt.bkcore.textanimator;
 
+import me.bkrmt.bkcore.textanimator.animations.RGBRainbowAnimation;
 import me.bkrmt.bkcore.textanimator.animations.ShineAnimation;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -139,6 +140,10 @@ public class AnimatorManager {
                 returnValue = new AnimationPlaceholder(text, color, animationString.contains("bold"), AnimationType.SHINE,
                         new AnimationOptions(optionText, updateFrequency, pauseAmount, size)
                 );
+            } else if (animationString.contains(AnimationType.RGB_RAINBOW.getString())) {
+                returnValue = new AnimationPlaceholder(text, color, animationString.contains("bold"), AnimationType.RGB_RAINBOW,
+                        new AnimationOptions(optionText, updateFrequency, pauseAmount, size)
+                );
             }
             return returnValue;
         }
@@ -158,6 +163,9 @@ public class AnimatorManager {
 
                 if (placeholder.getAnimationType().equals(AnimationType.SHINE))
                     animation = new ShineAnimation(color, bold, color + (placeholder.getOptions().getText().isEmpty() ? placeholder.getCleanText() : placeholder.getOptions().getText()));
+                else if (placeholder.getAnimationType().equals(AnimationType.RGB_RAINBOW))
+                    animation = new RGBRainbowAnimation(bold, color + (placeholder.getOptions().getText().isEmpty() ? placeholder.getCleanText() : placeholder.getOptions().getText()));
+
                 if (animation != null) {
                     animator = createTextAnimator(identifier, (placeholder.getOptions().getText().isEmpty() ? placeholder.getCleanText() : placeholder.getOptions().getText()));
                     animator

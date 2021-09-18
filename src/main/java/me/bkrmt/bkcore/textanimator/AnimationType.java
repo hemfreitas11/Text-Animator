@@ -1,7 +1,8 @@
 package me.bkrmt.bkcore.textanimator;
 
 public enum AnimationType {
-    SHINE("shine");
+    SHINE("shine"),
+    RGB_RAINBOW("rgb-rainbow");
 
     private final String message;
 

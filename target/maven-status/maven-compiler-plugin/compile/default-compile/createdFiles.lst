@@ -7,6 +7,7 @@ me\bkrmt\bkcore\textanimator\CancellableTask.class
 me\bkrmt\bkcore\textanimator\TextAnimator.class
 me\bkrmt\bkcore\textanimator\SchedulerRunnable.class
 me\bkrmt\bkcore\textanimator\AnimationResponse.class
+me\bkrmt\bkcore\textanimator\animations\RGBRainbowAnimation.class
 me\bkrmt\bkcore\textanimator\AnimatorManager$1.class
 me\bkrmt\bkcore\textanimator\animations\ShineAnimation.class
 me\bkrmt\bkcore\textanimator\AnimatorManager.class
